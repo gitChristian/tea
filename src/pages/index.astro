@@ -10,18 +10,12 @@
 		<meta name="description" content="Teacup, teapot, and plate rentals." />
 		<title>Rent A Tea Party</title>
 		<style>
-			.hero p {
-				font-size: 20px;
-				color: #666;
-				margin-bottom: 20px;
-			}
 			footer {
 				text-align: center;
 				padding: 20px 0;
 				border-top: 1px solid #eee;
 				font-size: 14px;
 			}
-
 			#mobile-menu-toggle:checked ~ .mobile-menu {
 				display: block;
 			}
@@ -183,9 +177,26 @@
 				</div>
 			</header>
 			<main>
-				<section class="hero text-center  py-14	bg-[#fadee8]">
-					<h2 class="text-3xl mb-2.5">Teacup, teapot, and plate rentals.</h2>
-					<p>Los Angeles</p>
+				<section class="hero relative text-center h-screen">
+					<video
+						class="absolute inset-0 w-full h-full object-cover"
+						autoplay
+						muted
+						loop
+						src="tea.mp4"
+					>
+						Your browser does not support the video tag.
+					</video>
+					<!-- Optional overlay for better text readability -->
+					<div class="absolute inset-0 bg-black opacity-50"></div>
+					<div
+						class="relative z-10 flex flex-col items-center justify-center h-full"
+					>
+						<h2 class="text-3xl mb-2.5 text-white">
+							Teacup, teapot, and plate rentals.
+						</h2>
+						<p class="text-white">Los Angeles</p>
+					</div>
 				</section>
 			</main>
 			<footer>
